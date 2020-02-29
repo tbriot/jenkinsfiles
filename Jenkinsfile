@@ -7,7 +7,7 @@ pipeline {
           steps {
             echo 'Hello world!'
             sleep 10
-            mail(subject: 'Build completed', body: 'The build has been completed', from: 'jenkins@jenkins.com', to: 'thomas.briot82@gmail.com')
+            mail(subject: 'Build completed', body: 'The build has been completed', to: 'thomas.briot82@gmail.com')
           }
         }
 
